@@ -91,10 +91,11 @@ document.addEventListener("DOMContentLoaded", () => {
 // Logo: go to home on subpages, scroll to top on home
 if (logo) {
   logo.addEventListener("click", () => {
-    const isOnProjectsPage = window.location.pathname.endsWith("projects.html");
+    const path = window.location.pathname;
+    const isSubPage = path.endsWith("projects.html") || path.endsWith("portfolio.html");
 
-    if (isOnProjectsPage) {
-      // Navigate back to the main page hero
+    if (isSubPage) {
+      // Navigate back to the main page hero section
       window.location.href = "index.html#hero";
     } else {
       // On the main page: smooth scroll to top
