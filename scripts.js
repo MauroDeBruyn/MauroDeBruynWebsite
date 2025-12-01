@@ -62,7 +62,7 @@ window.open(url, "_blank", "noopener");
 
 // Scroll reveal
 const revealElements = document.querySelectorAll(
-".project-card, .roadmap-item, .footer-section, .hero-content, .hero-visual"
+".project-card, .Experience-item, .footer-section, .hero-content, .hero-visual"
 );
 
 const observer = new IntersectionObserver(
