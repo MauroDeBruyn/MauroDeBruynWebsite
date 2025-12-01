@@ -326,13 +326,20 @@ inset: 25%;
 inset: 40%;
 }
 
+
+
 .radar-sweep {
-position: absolute;
-inset: 0;
-background: conic-gradient(from 180deg, rgba(0, 245, 160, 0.7), transparent 45%);
-animation: radar-spin 5s linear infinite;
-mix-blend-mode: screen;
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(0,245,160,0.7) 360deg
+  );
+  animation: radar-spin 5s linear infinite;
+  mix-blend-mode: screen;
 }
+
 
 .radar-node {
 position: absolute;
